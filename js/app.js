@@ -74,3 +74,26 @@ if (nmero % 2 === 0) {
 }
 document.write("<br>");
 
+// Ejercicio 11
+let nero = parseInt(prompt("Todos por los que es divisible / Ingresa un número"));
+
+let divisores = '';
+
+if (nero % 2 === 0) {
+  divisores += '2, ';
+}
+if (nero % 3 === 0) {
+  divisores += '3, ';
+}
+if (nero % 5 === 0) {
+  divisores += '5, ';
+}
+if (nero % 7 === 0) {
+  divisores += '7, ';
+}
+
+if (divisores === '') {
+  document.write(nero + " no es divisible por 2, 3, 5 ni 7.");
+} else {
+  document.write(nero + " es divisible por: " + divisores.slice(0, -2) + ".");
+}
