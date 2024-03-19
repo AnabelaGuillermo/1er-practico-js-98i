@@ -30,3 +30,22 @@ if (numero1 > numero2) {
 } else {
   document.write("Los números son iguales.");
 }
+document.write("<br>");
+
+// Ejercicio 7
+let nro1 = parseFloat(prompt("Comparación de 3 números / Ingrese el primer número"));
+let nro2 = parseFloat(prompt("Comparación de 3 números / Ingrese el segundo número"));
+let nro3 = parseFloat(prompt("Comparación de 3 números / Ingrese el tercer número"));
+
+if (nro1 < nro3 && nro2 < nro3) {
+  document.write("El (" + nro3 + ") es el número más grande.");
+} else if (nro1 < nro2 && nro3 < nro2) {
+  document.write("El (" + nro2 + ") es el número más grande.");
+} else if (nro2 < nro1 && nro3 < nro1) {
+  document.write("El (" + nro1 + ") es el número más grande.");
+} else {
+  document.write("Los números son iguales.");
+}
+document.write("<br>");
+
+
