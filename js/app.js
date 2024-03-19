@@ -56,6 +56,21 @@ if (numero % 2 === 0) {
 } else {
     document.write("El número " + numero + " no es divisible por 2.");
 }
+document.write("<br>");
 
+// Ejercicio 10
+let nmero = prompt("¿Es divisible por 2, 3, 5 o 7? Ingresa un número");
 
+if (nmero % 2 === 0) {
+    document.write(nmero + " es divisible por 2.");
+} else if (nmero % 3 === 0) {
+    document.write(nmero + " es divisible por 3.");
+} else if (nmero % 5 === 0) {
+    document.write(nmero + " es divisible por 5.");
+} else if (numero % 7 === 0) {
+    document.write(nmero + " es divisible por 7.");
+} else {
+    document.write(nmero + " no es divisible por 2, 3, 5 ni 7.");
+}
+document.write("<br>");
 
